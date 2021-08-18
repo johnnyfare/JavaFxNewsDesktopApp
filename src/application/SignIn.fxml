@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<HBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController3">
+
+
+<GridPane  alignment="center" hgap="10" Vgap="15" styleClass="root1">
+<padding><Insets left="10" right="10"/></padding>
+<Label text="Write daily New" id="welcomE" GridPane.columnIndex="0"  GridPane.rowIndex="1">
+
+<GridPane.margin>
+
+    	 <Insets left="60"/>
+    </GridPane.margin>
+</Label>
+        <ImageView
+                fx:id="imageView"
+                fitHeight="250"
+                fitWidth="250"
+                pickOnBounds="true"
+                preserveRatio="true"
+                GridPane.columnIndex="0"  GridPane.rowIndex="0" 
+
+             >
+            <image>
+                <Image
+                    url="/Images/download.png"
+                    backgroundLoading="true"
+                    />
+            </image>
+        </ImageView>
+</GridPane>
+
+<GridPane  hgap="10" vgap="10">
+
+<padding><Insets left="70" top="100"/></padding>
+<Text text="Log In Page" id="login" GridPane.columnIndex="0" GridPane.rowIndex="0">
+<GridPane.margin>
+
+    	 <Insets left="70"/>
+    </GridPane.margin></Text>
+<Text text="UserName" id="man" GridPane.columnIndex="0" GridPane.rowIndex="4"/>    
+<TextField GridPane.columnIndex="0" GridPane.rowIndex="5" fx:id="username" />
+<Label  id="invalid"  fx:id="TextInvalid" GridPane.columnIndex="0" GridPane.rowIndex="6"></Label>
+
+<Text text = "Password"  id="man" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+<TextField GridPane.columnIndex="0" GridPane.rowIndex="8" fx:id="password"/>
+<Label id="invalid" fx:id="passwordInvalid" GridPane.columnIndex="0" GridPane.rowIndex="9"></Label>
+
+<Text text = "Email" id="man"  GridPane.columnIndex="0" GridPane.rowIndex="10"/>
+<TextField  GridPane.columnIndex="0" fx:id="email" GridPane.rowIndex="11"/>
+<Label fx:id="emailInvalid" id="invalid" GridPane.columnIndex="0" GridPane.rowIndex="12"></Label>
+
+<Text text = "Journalist ID" id="man"  GridPane.columnIndex="0" GridPane.rowIndex="13"/>
+<TextField  GridPane.columnIndex="0"  fx:id="isjournalisT" GridPane.rowIndex="14"/>
+<Label GridPane.columnIndex="0" GridPane.rowIndex="15" fx:id="journalistIDIn">Enter your journalist id so you can post news</Label>
+<!-- 12 -->
+<Button text="Sign In" id="button"  GridPane.columnIndex="0" onAction="#signIn" GridPane.rowIndex="16" GridPane.columnSpan="2">
+    <GridPane.margin>
+        <Insets left="160"/>
+    </GridPane.margin>
+</Button>
+
+<Button text="back" id="button"  GridPane.columnIndex="0" onAction="#returnToAction"  GridPane.rowIndex="16" GridPane.columnSpan="2">
+    <GridPane.margin>
+        <Insets left="10"/>
+    </GridPane.margin>
+</Button>
+<!-- 14 -->
+ 
+
+</GridPane>
+
+
+</HBox>

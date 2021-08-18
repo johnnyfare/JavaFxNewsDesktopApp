@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="snow" fx:controller="application.MyPostClass">
+	<top>
+	<GridPane  alignment="center" hgap="10" Vgap="15" styleClass="root1">
+	<Button text="log OuT"  GridPane.columnIndex="0" onAction="#Logout" fx:id="Logout" id="button" GridPane.rowIndex="1" >
+	  <GridPane.margin>
+        <Insets left="-400"/>
+    </GridPane.margin>
+	</Button>
+<padding><Insets left="10" right="10" bottom="10"/></padding>
+<Label text="Write daily New" id="welcomE" GridPane.columnIndex="0"  GridPane.rowIndex="1"/>
+
+
+	
+	</GridPane>
+	
+	<!-- <Button fx:id="button" text="back" onAction="#handle"></Button> -->
+	</top>
+	<center>
+
+		<ScrollPane fx:id="sasd"><padding><Insets left="100" top="40"/></padding>
+		    <content>
+		    	<VBox spacing="20">
+			    	<HBox spacing="20">
+	   				
+						<!-- <TextField id="search"  />
+						<padding><Insets left="70"/></padding>
+						<Button id="newButton" onAction="#searchOnclick">Search</Button> -->
+					
+							</HBox>
+			        <VBox prefWidth="200" alignment="center" fx:id="Left" spacing="20">
+			  
+			            <children>
+			            
+			            </children>
+			        </VBox>
+		    	</VBox> 
+		    </content>
+		</ScrollPane>
+	</center>
+	<left>
+	<VBox styleClass="root1" spacing="20" >
+<padding><Insets left="12" top="150" right="40"/></padding>
+<Button  text="Home Page" onAction="#hmeeE" id="buttonMyAdd">
+</Button>
+<Label text="My Post" id="HomePageBackground"/>
+
+<Button id="buttonMyAdd" fx:id="button" onAction="#openPost">Add post</Button>
+</VBox>
+	</left>
+
+</BorderPane>
+

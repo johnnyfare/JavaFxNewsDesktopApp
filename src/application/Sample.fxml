@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<HBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+
+
+<GridPane  alignment="center" hgap="10" Vgap="15" styleClass="root1">
+<padding><Insets left="10" right="10"/></padding>
+<Label text="Write daily News" id="welcomE" GridPane.columnIndex="0"  GridPane.rowIndex="1">
+
+<GridPane.margin>
+
+    	 <Insets left="60"/>
+    </GridPane.margin>
+</Label>
+        <ImageView
+                fx:id="imageView"
+                fitHeight="250"
+                fitWidth="250"
+                pickOnBounds="true"
+                preserveRatio="true"
+                GridPane.columnIndex="0"  GridPane.rowIndex="0" 
+
+             >
+            <image>
+                <Image
+                    url="/Images/download.png"
+                    backgroundLoading="true"
+                    />
+            </image>
+        </ImageView>
+</GridPane>
+
+<GridPane  hgap="10" vgap="10">
+
+<padding><Insets left="70" top="100"/></padding>
+<Text text="Log In Page" id="login" GridPane.columnIndex="0" GridPane.rowIndex="0">
+<GridPane.margin>
+
+    	 <Insets left="70"/>
+    </GridPane.margin></Text>
+<Text text="UserName" id="man" GridPane.columnIndex="0" GridPane.rowIndex="4"/>    
+<TextField GridPane.columnIndex="0" GridPane.rowIndex="5" fx:id="userName" />
+<Text text = "Password"  id="man" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+<TextField GridPane.columnIndex="0" GridPane.rowIndex="7" fx:id="password"/>
+<!--<Text text = "Email" id="man" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+<TextField GridPane.columnIndex="0" GridPane.rowIndex="9"/>-->
+<!-- 12 -->
+<Button text="Log In" id="button"  onAction="#Login" GridPane.columnIndex="0"  GridPane.rowIndex="10" GridPane.columnSpan="2">
+    <GridPane.margin>
+        <Insets left="100"/>
+    </GridPane.margin>
+</Button>
+<!-- 14 -->
+<Button text="Don't have an account Sign In"  onAction="#signin" id="button2" GridPane.columnIndex="0" GridPane.rowIndex="12">
+<GridPane.margin>
+
+    	 <Insets left="30"/>
+    </GridPane.margin></Button>
+    
+
+<Text text="" id="two" GridPane.rowIndex="16" fx:id="invalid" GridPane.columnIndex="0" >
+<GridPane.margin>
+
+    	 <Insets left="55"/>
+    </GridPane.margin></Text>
+
+</GridPane>
+
+
+</HBox>
