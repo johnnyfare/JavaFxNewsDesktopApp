@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Add">
+	<top>
+	<GridPane  alignment="center" hgap="10" Vgap="15" styleClass="root1">
+<padding><Insets left="10" right="10" bottom="10"/></padding>
+<Label text="Add Post" id="welcomE" GridPane.columnIndex="0"  GridPane.rowIndex="1"/>
+	
+	</GridPane>
+	
+	<!-- <Button fx:id="button" text="back" onAction="#handle"></Button> -->
+	</top>
+	<center>
+	<GridPane  hgap="10" vgap="10"><padding><Insets left="300" bottom="10"/></padding>
+
+<Text text = "Title"  id="man" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+<TextField GridPane.columnIndex="0" GridPane.rowIndex="8" fx:id="textfield"/>
+
+
+<Text text = "Enter your post" id="man"  GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+<TextArea id="textArea"  fx:id="area" prefWidth="300.0" text="This is demo application ....text area control..." wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+<!-- 12 -->
+
+<!-- 14 -->
+ <Button id="button" GridPane.columnIndex="0" GridPane.rowIndex="14" onAction="#sendPostAdd">
+Send</Button>
+
+</GridPane>
+	</center>
+	<left>
+	<VBox styleClass="root1" spacing="20" >
+<padding><Insets left="12" top="150" right="40"/></padding>
+<Button  text="Home Page" onAction="#Home" id="buttonMyAdd">
+</Button>
+<Label text="add a Post" id="HomePageBackground"/>
+<Button id="buttonMyAdd" onAction="#Post">My post</Button>
+
+
+</VBox>
+	</left>
+
+</BorderPane>
+
